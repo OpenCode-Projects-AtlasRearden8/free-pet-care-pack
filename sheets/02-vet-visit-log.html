@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Vet-Visit Log</title>
+<link rel="stylesheet" href="shared/shared.css">
+<style>
+/* --- vet-visit log --- */
+.vtable { width: 100%; border-collapse: collapse; }
+.vtable th {
+  background: var(--cream); border: 1pt solid var(--line);
+  font-size: 7.6pt; text-transform: uppercase; letter-spacing: .07em;
+  color: var(--muted); padding: 1.4mm 1.8mm; text-align: left;
+}
+.vtable td { border: 1pt solid var(--line); font-size: 9pt; padding: 1.2mm 2mm; }
+tr.visit-row td { height: 10.8mm; }
+tr.vac-row td { height: 9mm; }
+td.c-date { width: 22mm; }
+td.c-why  { width: 46mm; }
+td.c-clinic { width: 42mm; }
+td.c-notes { width: auto; }
+td.c-next { width: 24mm; }
+td.c-given { width: 34mm; }
+td.c-vax { width: auto; }
+td.c-by { width: 38mm; }
+.vhint { font-size: 7.8pt; color: var(--hint); }
+.sums {
+  border: 1.2pt solid var(--line); border-radius: 2.2mm; background: var(--cream);
+  padding: 2mm 3mm; font-size: 8.8pt; color: var(--muted);
+}
+.page .sec { margin: 2.6mm 0 1.6mm; }
+.page .foot { margin-top: 4mm; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <header class="head">
+    <div class="badge">print &amp; fill &middot; keep ahead of boosters</div>
+    <h1>Vet-Visit Log</h1>
+    <p class="tag">Every visit in one column of history &mdash; and vaccine rows that call you before the vaccines are late.</p>
+  </header>
+
+  <div class="howto"><b>One row per visit.</b> The vaccine-due rows underneath are the part future-you will thank: write the next due date while it&rsquo;s fresh at the desk, then book the call the week it lands.</div>
+
+  <div class="sec"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><h2>Visits</h2></div>
+  <table class="vtable">
+    <tr><th class="c-date">When</th><th class="c-why">Reason &amp; what was done</th><th class="c-clinic">Clinic &amp; vet</th><th class="c-notes">Weight, cost, notes</th><th class="c-next">Follow-up</th></tr>
+    <tr class="visit-row"><td class="c-date"></td><td class="c-why"></td><td class="c-clinic"></td><td class="c-notes"></td><td class="c-next"></td></tr>
+    <tr class="visit-row"><td class="c-date"></td><td class="c-why"></td><td class="c-clinic"></td><td class="c-notes"></td><td class="c-next"></td></tr>
+    <tr class="visit-row"><td class="c-date"></td><td class="c-why"></td><td class="c-clinic"></td><td class="c-notes"></td><td class="c-next"></td></tr>
+    <tr class="visit-row"><td class="c-date"></td><td class="c-why"></td><td class="c-clinic"></td><td class="c-notes"></td><td class="c-next"></td></tr>
+    <tr class="visit-row"><td class="c-date"></td><td class="c-why"></td><td class="c-clinic"></td><td class="c-notes"></td><td class="c-next"></td></tr>
+    <tr class="visit-row"><td class="c-date"></td><td class="c-why"></td><td class="c-clinic"></td><td class="c-notes"></td><td class="c-next"></td></tr>
+    <tr class="visit-row"><td class="c-date"></td><td class="c-why"></td><td class="c-clinic"></td><td class="c-notes"></td><td class="c-next"></td></tr>
+    <tr class="visit-row"><td class="c-date"></td><td class="c-why"></td><td class="c-clinic"></td><td class="c-notes"></td><td class="c-next"></td></tr>
+  </table>
+
+  <div class="sec"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><h2>Vaccine rows &mdash; the keep-ahead table</h2></div>
+  <table class="vtable">
+    <tr><th class="c-vax">Vaccine &amp; kind (routine, booster&hellip;)</th><th class="c-given">Given on</th><th class="c-by">Next due</th><th class="c-given2">Call &amp; book by</th></tr>
+    <tr class="vac-row"><td class="c-vax"></td><td class="c-given"></td><td class="c-by"></td><td></td></tr>
+    <tr class="vac-row"><td class="c-vax"></td><td class="c-given"></td><td class="c-by"></td><td></td></tr>
+    <tr class="vac-row"><td class="c-vax"></td><td class="c-given"></td><td class="c-by"></td><td></td></tr>
+    <tr class="vac-row"><td class="c-vax"></td><td class="c-given"></td><td class="c-by"></td><td></td></tr>
+    <tr class="vac-row"><td class="c-vax"></td><td class="c-given"></td><td class="c-by"></td><td></td></tr>
+    <tr class="vac-row"><td class="c-vax"></td><td class="c-given"></td><td class="c-by"></td><td></td></tr>
+    <tr class="vac-row"><td class="c-vax"></td><td class="c-given"></td><td class="c-by"></td><td></td></tr>
+  </table>
+  <p class="vhint">Sticker reminders from the clinic? Stick them in the folder pocket that same evening, then copy them here.</p>
+
+  <div class="foot"><span>Free Pet Care Pack &middot; vet-visit log</span><span>works in black &amp; white</span></div>
+</section>
+
+<section class="page guide last">
+  <header class="head">
+    <div class="badge">how to use it</div>
+    <h1>How to Use &middot; Vet-Visit Log</h1>
+    <p class="tag">An eight-row visit history, seven vaccine-due rows, zero panic in December.</p>
+  </header>
+
+  <div class="gblock">
+    <h3>What this sheet builds</h3>
+    <p>A run-down of what happened at the clinic, and &mdash; more usefully &mdash; a due-date table that turns future bookings from memory work into calendar work. Booster notices get lost; a written row doesn&rsquo;t.</p>
+  </div>
+
+  <div class="gblock">
+    <h3>Sixty-second setup</h3>
+    <ol>
+      <li>Backfill from your last clinic paperwork: date, reason, anything due next.</li>
+      <li>Missing details live at the clinic &mdash; one short phone call, pet&rsquo;s name in hand, is usually all it takes.</li>
+      <li>Each visit, fill its row <i>while you wait</i> for the receipt. Memory is a leaky bucket here.</li>
+    </ol>
+  </div>
+
+  <div class="gblock">
+    <h3>Vaccine-due rows, done kindly</h3>
+    <ul>
+      <li>Write the next-due date in the biggest words you own &mdash; this column is the whole point of the sheet.</li>
+      <li>The &ldquo;call and book by&rdquo; column is your cue, a week or two ahead of the due date. Book by that, and you&rsquo;re never chasing an expired vaccine.</li>
+      <li>Pair each row with the pet profile sheet&rsquo;s allergy and meds boxes &mdash; the two sheets answer each other.</li>
+    </ul>
+  </div>
+
+  <div class="gblock">
+    <h3>A quiet tip</h3>
+    <p>Tape the sheet inside the folder&rsquo;s front cover and take visible dates out loud to family once a season &mdash; shared knowledge means the appointment doesn&rsquo;t always fall on the same tired person.</p>
+  </div>
+
+  <div class="foot"><span>Home friendly &middot; copy, print, share</span><span>no signups &middot; no internet needed</span></div>
+</section>
+
+</body>
+</html>

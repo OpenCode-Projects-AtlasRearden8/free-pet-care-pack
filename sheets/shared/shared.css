@@ -1,0 +1,129 @@
+/* ------------------------------------------------------------------
+   shared/shared.css - base print styles for every sheet in the pack.
+   Layout target: A4 (297mm tall). A Letter override is injected by the
+   build script when --paper letter is used. Sheets are designed so all
+   content fits inside ~250mm of height on either paper size.
+   ------------------------------------------------------------------ */
+
+@page {
+  size: A4;
+  margin: 11mm 12mm;
+}
+
+:root {
+  --ink:   #35301f;
+  --muted: #6f6455;
+  --hint:  #9a8c78;
+  --line:  #d8cdba;
+  --cream: #fdf6e9;
+  --terra: #c96f4a;
+  --teal:  #2f9e8f;
+  --amber: #e0a03a;
+  --bark:  #8a5a3b;
+  --grass: #7bb25c;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Trebuchet MS", "Verdana", "DejaVu Sans", sans-serif;
+  color: var(--ink);
+  font-size: 10.5pt;
+  line-height: 1.45;
+  background: #ffffff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* One <section class="page"> per printed sheet face. */
+.page       { break-after: page; page-break-after: always; }
+.page.last  { break-after: auto; page-break-after: auto; }
+
+/* ---- sheet header ---- */
+.head {
+  border-bottom: 2.5pt solid var(--ink);
+  padding-bottom: 2.5mm;
+  margin-bottom: 4.5mm;
+}
+.head .badge {
+  display: inline-block;
+  font-size: 7.2pt;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  background: var(--cream);
+  border: 1pt solid var(--line);
+  border-radius: 9pt;
+  padding: 0.8mm 3mm;
+  color: var(--muted);
+  margin-bottom: 1.6mm;
+}
+.head h1 { font-size: 20.5pt; line-height: 1.12; }
+.head .tag { color: var(--muted); font-size: 9.5pt; margin-top: 1.2mm; }
+
+/* ---- page footer ---- */
+.foot {
+  margin-top: 5mm;
+  border-top: 1pt dashed var(--line);
+  padding-top: 1.8mm;
+  color: var(--hint);
+  font-size: 8pt;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---- section titles with a paw pip ---- */
+.sec { display: flex; align-items: center; gap: 2.4mm; margin: 3.6mm 0 2mm; }
+.sec h2 { font-size: 12.5pt; margin: 0; }
+.sec .pip { flex: none; }
+
+/* ---- reusable boxes ---- */
+.howto {
+  background: var(--cream);
+  border: 1.2pt solid var(--line);
+  border-radius: 2.6mm;
+  padding: 2.2mm 3.2mm;
+  font-size: 9.3pt;
+}
+.howto b { letter-spacing: .02em; }
+
+.wline { display: block; border-bottom: 1pt solid var(--muted); min-height: 6.8mm; }
+.wfield { border: 1.2pt solid var(--line); border-radius: 2mm; min-height: 9.5mm; }
+
+/* ---- write-in checkbox ---- */
+.cb {
+  display: inline-block;
+  width: 4.6mm; height: 4.6mm;
+  border: 1.3pt solid var(--muted);
+  border-radius: 1.3mm;
+  margin-right: 2.2mm;
+  vertical-align: -0.9mm;
+  flex: none;
+}
+
+/* ---- pure-CSS paw print (no images, no fonts) ----
+   Usage: <span class="paw"><b class="pad"></b><b class="t t1"></b>...
+   Colour objects with --pawc (defaults to terracotta).               */
+.paw { position: relative; display: inline-block; width: 8.4mm; height: 7.4mm; }
+.paw b { position: absolute; background: var(--pawc, var(--terra)); border-radius: 50%; }
+.paw b.pad { width: 4.7mm; height: 3.5mm; left: 1.85mm; bottom: 0; border-radius: 46% 46% 52% 52%; }
+.paw b.t1 { width: 1.5mm; height: 2mm; left: 0.95mm; top: 0.35mm; }
+.paw b.t2 { width: 1.5mm; height: 2.1mm; left: 2.65mm; top: 0; }
+.paw b.t3 { width: 1.5mm; height: 2.1mm; left: 4.35mm; top: 0; }
+.paw b.t4 { width: 1.5mm; height: 2mm; left: 6.05mm; top: 0.35mm; }
+
+/* ---- guide (how-to-use) pages ---- */
+.guide { background: var(--cream); }
+.guide .head { border-bottom-color: var(--bark); }
+.guide .badge { background: #f4ead9; }
+.gblock {
+  background: #ffffff;
+  border: 1.2pt solid var(--line);
+  border-radius: 2.8mm;
+  padding: 2.6mm 3.6mm;
+  margin-bottom: 3mm;
+}
+.gblock h3 { font-size: 11.5pt; margin-bottom: 1.3mm; }
+.gblock p, .gblock li { font-size: 9.3pt; color: #4b4437; }
+.gblock ul, .gblock ol { padding-left: 5.5mm; }
+.gblock li { margin-bottom: 1mm; }
+.guide .foot { border-top-color: var(--bark); }

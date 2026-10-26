@@ -1,0 +1,68 @@
+{
+  "paper": "a4",
+  "renderer": "auto",
+  "renderers_used": [
+    "auto"
+  ],
+  "generated_utc": "2026-10-26T09:54:14+00:00",
+  "sheets": {
+    "00-getting-started": {
+      "slug": "00-getting-started",
+      "renderer": "auto",
+      "pages": 1,
+      "bytes": 21504,
+      "sha256": "f595df449325"
+    },
+    "01-pet-profile": {
+      "slug": "01-pet-profile",
+      "renderer": "auto",
+      "pages": 2,
+      "bytes": 24672,
+      "sha256": "181031dddbf7"
+    },
+    "02-vet-visit-log": {
+      "slug": "02-vet-visit-log",
+      "renderer": "auto",
+      "pages": 2,
+      "bytes": 22868,
+      "sha256": "e11f2f38f548"
+    },
+    "03-sitter-handoff-card": {
+      "slug": "03-sitter-handoff-card",
+      "renderer": "auto",
+      "pages": 2,
+      "bytes": 25428,
+      "sha256": "c00e928c62b8"
+    },
+    "04-feeding-schedule": {
+      "slug": "04-feeding-schedule",
+      "renderer": "auto",
+      "pages": 2,
+      "bytes": 23226,
+      "sha256": "e7c07bd0e665"
+    },
+    "05-lost-pet-flyer": {
+      "slug": "05-lost-pet-flyer",
+      "renderer": "auto",
+      "pages": 2,
+      "bytes": 26077,
+      "sha256": "c2b2f09c2b96"
+    },
+    "06-pet-safe-room-checklist": {
+      "slug": "06-pet-safe-room-checklist",
+      "renderer": "auto",
+      "pages": 2,
+      "bytes": 252645,
+      "sha256": "1d65ac965c7a"
+    }
+  },
+  "expected_pages": {
+    "00-getting-started": 1,
+    "01-pet-profile": 2,
+    "02-vet-visit-log": 2,
+    "03-sitter-handoff-card": 2,
+    "04-feeding-schedule": 2,
+    "05-lost-pet-flyer": 2,
+    "06-pet-safe-room-checklist": 2
+  }
+}

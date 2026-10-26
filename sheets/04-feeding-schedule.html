@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Feeding Schedule Grid</title>
+<link rel="stylesheet" href="shared/shared.css">
+<style>
+/* --- feeding schedule grid --- */
+.quick { display: flex; gap: 2.6mm; margin-bottom: 3mm; }
+.qbox {
+  flex: 1; border: 1.2pt solid var(--line); border-radius: 2.2mm;
+  padding: 1.8mm 2.6mm 2.2mm; background: #fff;
+}
+.qbox b { display: block; font-size: 7.3pt; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin-bottom: 0.8mm; }
+.qbox .wline { min-height: 6mm; }
+.qbox .wline + .wline { margin-top: 1.4mm; }
+.ftable { width: 100%; border-collapse: collapse; }
+.ftable th {
+  background: var(--cream); border: 1pt solid var(--line);
+  font-size: 7.4pt; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted); padding: 1.4mm 1.6mm; text-align: left;
+}
+.ftable td { border: 1pt solid var(--line); font-size: 9pt; padding: 1mm 1.8mm; height: 18.6mm; }
+td.f-day { width: 13mm; text-align: center; font-weight: 700; color: var(--bark); text-transform: uppercase; font-size: 8pt; letter-spacing: .04em; }
+td.f-morning, td.f-evening { width: 45mm; }
+td.f-extra { width: 34mm; }
+td.f-tick { width: 12mm; text-align: center; }
+th.h-tick, td.f-tick { text-align: center; }
+.reWrite { }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <header class="head">
+    <div class="badge">print &amp; hang &middot; tick as fed</div>
+    <h1>Feeding Schedule Grid</h1>
+    <p class="tag">One week of bowls at a glance &mdash; the fridge answers &ldquo;did anyone feed him?&rdquo; so nobody has to remember anything.</p>
+  </header>
+
+  <div class="quick">
+    <div class="qbox"><b>The eaters (names)</b><span class="wline"></span><span class="wline"></span></div>
+    <div class="qbox"><b>Where the bowls live</b><span class="wline"></span></div>
+    <div class="qbox"><b>Water rule (refresh &amp; rinse)</b><span class="wline"></span></div>
+    <div class="qbox"><b>Treat rule &mdash; what counts as treats</b><span class="wline"></span></div>
+  </div>
+
+  <div class="sec"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><h2>The week</h2></div>
+  <table class="ftable">
+    <tr><th>Day</th><th>Morning &mdash; what &amp; when</th><th>Evening &mdash; what &amp; when</th><th>Meds / extra</th><th class="h-tick">Fed &#10003;</th><th class="h-tick">Water &#10003;</th><th>By</th></tr>
+    <tr class="frow" data-day="mon"><td class="f-day">Mon</td><td class="f-morning"></td><td class="f-evening"></td><td class="f-extra"></td><td class="f-tick"></td><td class="f-tick"></td><td></td></tr>
+    <tr class="frow" data-day="tue"><td class="f-day">Tue</td><td class="f-morning"></td><td class="f-evening"></td><td class="f-extra"></td><td class="f-tick"></td><td class="f-tick"></td><td></td></tr>
+    <tr class="frow" data-day="wed"><td class="f-day">Wed</td><td class="f-morning"></td><td class="f-evening"></td><td class="f-extra"></td><td class="f-tick"></td><td class="f-tick"></td><td></td></tr>
+    <tr class="frow" data-day="thu"><td class="f-day">Thu</td><td class="f-morning"></td><td class="f-evening"></td><td class="f-extra"></td><td class="f-tick"></td><td class="f-tick"></td><td></td></tr>
+    <tr class="frow" data-day="fri"><td class="f-day">Fri</td><td class="f-morning"></td><td class="f-evening"></td><td class="f-extra"></td><td class="f-tick"></td><td class="f-tick"></td><td></td></tr>
+    <tr class="frow" data-day="sat"><td class="f-day">Sat</td><td class="f-morning"></td><td class="f-evening"></td><td class="f-extra"></td><td class="f-tick"></td><td class="f-tick"></td><td></td></tr>
+    <tr class="frow" data-day="sun"><td class="f-day">Sun</td><td class="f-morning"></td><td class="f-evening"></td><td class="f-extra"></td><td class="f-tick"></td><td class="f-tick"></td><td></td></tr>
+  </table>
+
+  <p class="howto" style="margin-top:3mm"><b>Portions live by the scoop:</b> same scoop, same bowl, same corner. Pets adore boring &mdash; boring is what safe looks like.</p>
+
+  <div class="foot"><span>Free Pet Care Pack &middot; feeding schedule</span><span>works in black &amp; white</span></div>
+</section>
+
+<section class="page guide last">
+  <header class="head">
+    <div class="badge">how to use it</div>
+    <h1>How to Use &middot; Feeding Schedule Grid</h1>
+    <p class="tag">Seven days, tick-boxes, and a gentle end to &ldquo;I thought <i>you</i> fed him&rdquo;.</p>
+  </header>
+
+  <div class="gblock">
+    <h3>What this sheet builds</h3>
+    <p>A shared truth on the fridge. When feeding lives on paper, no single person carries it in their head, and the pet gets the same breakfast from whoever reaches the kitchen first.</p>
+  </div>
+
+  <div class="gblock">
+    <h3>Sixty-second setup</h3>
+    <ol>
+      <li>Copy what you already do today &mdash; this grid describes reality first, ambition later.</li>
+      <li>Write the portions once per column in words you&rsquo;d say out loud (&ldquo;half a scoop plus a splash&rdquo;).</li>
+      <li>Hang it where the bowls live; tick as fed. A ticked row is a done thing &mdash; no memory required.</li>
+    </ol>
+  </div>
+
+  <div class="gblock">
+    <h3>Kind notes for busy brains</h3>
+    <ul>
+      <li>The tick-box is the whole trick: it turns feeding from a nagging thought into a finished, visible thing.</li>
+      <li>Meds and extras ride the same row and the same tick &mdash; pair this grid with the vet log so dosing never drifts.</li>
+      <li>Missed ticks stay un-judged; missed meals get noticed. That&rsquo;s the difference the grid exists for.</li>
+    </ul>
+  </div>
+
+  <div class="gblock">
+    <h3>Fresh water, quietly important</h3>
+    <p>The water tick refills brains too: a rinse-and-refresh rule in the top box keeps it from becoming a once-a-day afterthought. Cats especially prefer a clean, full bowl and will say so loudly.</p>
+  </div>
+
+  <div class="foot"><span>Home friendly &middot; copy, print, share</span><span>no signups &middot; no internet needed</span></div>
+</section>
+
+</body>
+</html>

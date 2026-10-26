@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pet Profile Sheet</title>
+<link rel="stylesheet" href="shared/shared.css">
+<style>
+/* --- pet profile sheet --- */
+.toprow { display: flex; gap: 3.6mm; margin-bottom: 3.2mm; }
+.photo-box {
+  width: 46mm; height: 46mm; flex: none;
+  border: 1.6pt dashed var(--muted); border-radius: 2.6mm;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  color: var(--hint); font-size: 8.4pt; padding: 3mm;
+  background: var(--cream);
+}
+.basics { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 2.2mm; }
+.bfield {
+  border: 1.2pt solid var(--line); border-radius: 2.2mm;
+  padding: 1.8mm 2.6mm 1.4mm; background: #fff;
+}
+.bfield b {
+  display: block; font-size: 7.1pt; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--muted); margin-bottom: 0.6mm;
+}
+.bfield .wline { min-height: 6.6mm; }
+.pcell {
+  border: 1.2pt solid var(--line); border-radius: 2.2mm;
+  padding: 2mm 2.8mm 2.6mm; background: #fff;
+}
+.threecols { display: flex; gap: 3mm; margin-bottom: 3.2mm; }
+.threecols .pcell { flex: 1; }
+.threecols .pcell b {
+  display: block; font-size: 9.4pt; margin-bottom: 1.2mm;
+}
+.pcell .wline { min-height: 6.4mm; }
+.pcell .wline + .wline { margin-top: 2mm; }
+.twocols { display: flex; gap: 3mm; margin-bottom: 3.2mm; }
+.twocols .pcell { flex: 1; }
+.crisis {
+  border: 1.4pt solid var(--terra); border-radius: 2.6mm;
+  background: #fdf1ea; padding: 2.4mm 3.2mm 2.8mm;
+}
+.crisis b.big { font-size: 10.8pt; }
+.crisis .cline { display: flex; gap: 3mm; margin-top: 1.8mm; }
+.crisis .cline span {
+  flex: 1; font-size: 8.6pt; color: var(--muted);
+}
+.crisis .cline .wline { margin-top: 0.6mm; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <header class="head">
+    <div class="badge">print &amp; fill &middot; one animal per sheet</div>
+    <h1>Pet Profile Sheet</h1>
+    <p class="tag">The one-page dossier: what they look like, what they love, what their vet needs to know.</p>
+  </header>
+
+  <div class="toprow">
+    <div class="photo-box">tape a photo here &mdash; one where the face and the collar both show</div>
+    <div class="basics">
+      <div class="bfield"><b>Pet&rsquo;s name</b><span class="wline"></span></div>
+      <div class="bfield"><b>Species</b><span class="wline"></span></div>
+      <div class="bfield"><b>Breed / mix</b><span class="wline"></span></div>
+      <div class="bfield"><b>Birthday or &ldquo;roughly&rdquo;</b><span class="wline"></span></div>
+      <div class="bfield"><b>Colour &amp; marks</b><span class="wline"></span></div>
+      <div class="bfield"><b>Weight &amp; the date it was taken</b><span class="wline"></span></div>
+    </div>
+  </div>
+
+  <div class="sec"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><h2>The heart of things</h2></div>
+  <div class="threecols">
+    <div class="pcell"><b>Loves&hellip;</b><span class="wline"></span><span class="wline"></span></div>
+    <div class="pcell"><b>Worries about&hellip;</b><span class="wline"></span><span class="wline"></span></div>
+    <div class="pcell"><b>Quirks we&rsquo;ve accepted</b><span class="wline"></span><span class="wline"></span></div>
+  </div>
+
+  <div class="sec"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><h2>Daily rhythm</h2></div>
+  <div class="twocols">
+    <div class="pcell"><b>Meals, treats &amp; water habits</b><span class="wline"></span><span class="wline"></span></div>
+    <div class="pcell"><b>Walks, play, litter &amp; yard time</b><span class="wline"></span><span class="wline"></span></div>
+  </div>
+
+  <div class="sec"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><h2>Health basics</h2></div>
+  <div class="threecols">
+    <div class="pcell"><b>Vet clinic &amp; phone</b><span class="wline"></span></div>
+    <div class="pcell"><b>Microchip &amp; tag details</b><span class="wline"></span></div>
+    <div class="pcell"><b>Allergies &amp; regular meds</b><span class="wline"></span></div>
+    <div class="pcell"><b>Grooming, baths, trimmings</b><span class="wline"></span></div>
+  </div>
+
+  <div class="sec"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><h2>If something&rsquo;s wrong tonight</h2></div>
+  <div class="crisis">
+    <b class="big">Who to call, in order:</b>
+    <div class="cline"><span>our regular vet clinic</span><div class="wline"></div></div>
+    <div class="cline"><span>after-hours / emergency clinic</span><div class="wline"></div></div>
+    <div class="cline"><span>the backup human who has met this animal</span><div class="wline"></div></div>
+  </div>
+
+  <div class="foot"><span>Free Pet Care Pack &middot; pet profile</span><span>works in black &amp; white</span></div>
+</section>
+
+<section class="page guide last">
+  <header class="head">
+    <div class="badge">how to use it</div>
+    <h1>How to Use &middot; Pet Profile Sheet</h1>
+    <p class="tag">One sheet per animal, kept where the food comes from.</p>
+  </header>
+
+  <div class="gblock">
+    <h3>What this sheet builds</h3>
+    <p>A dossier the whole family can read in one glance &mdash; and that a stranger, a sitter or an emergency clinic could use if you&rsquo;re not around. The photo matters more than perfect handwriting: faces get animals found and remembered.</p>
+  </div>
+
+  <div class="gblock">
+    <h3>Sixty-second setup</h3>
+    <ol>
+      <li>Tape in a photo, then fill the top row from memory &mdash; nobody&rsquo;s checking your spelling of the breed.</li>
+      <li>Copy the vet line straight off your last clinic receipt, and the chip line off the adoption or purchase papers.</li>
+      <li>Leave what you don&rsquo;t know blank. Blanks get fixed on the next vet visit; guesses never do.</li>
+    </ol>
+  </div>
+
+  <div class="gblock">
+    <h3>Keep it true</h3>
+    <ul>
+      <li>Weights and meds drift: re-copy the sheet whenever the collar feels loose, or with the seasons.</li>
+      <li>Old copies stay in the folder &mdash; a stack of honest old pages beats one polished page of stale facts.</li>
+      <li>Teens and tweens can own a section: quirks and loves are theirs to write, and they notice everything.</li>
+    </ul>
+  </div>
+
+  <div class="gblock">
+    <h3>More than one animal?</h3>
+    <p>One sheet each, newest on top. The &ldquo;worries&rdquo; box is the hidden gem: writing down what startles each animal makes thunder seasons and vet days dramatically calmer.</p>
+  </div>
+
+  <div class="foot"><span>Home friendly &middot; copy, print, share</span><span>no signups &middot; no internet needed</span></div>
+</section>
+
+</body>
+</html>

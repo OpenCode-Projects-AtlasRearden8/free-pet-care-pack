@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Start Here — Free Pet Care Pack</title>
+<link rel="stylesheet" href="shared/shared.css">
+<style>
+.welcome { display: flex; gap: 3.6mm; align-items: flex-start; margin-bottom: 3mm; }
+.welcome .paw { margin-top: 2.2mm; }
+.sheet-list { display: flex; flex-direction: column; gap: 1.7mm; }
+.sheet-row {
+  display: flex; gap: 3mm; align-items: baseline;
+  border: 1.2pt solid var(--line); border-radius: 2.4mm;
+  background: #fff; padding: 1.8mm 3mm;
+}
+.sheet-row .paw { align-self: center; flex: none; transform: scale(.72); transform-origin: center left; margin-right: -1mm; }
+.sheet-row b { font-size: 10.6pt; flex: none; width: 47mm; }
+.sheet-row span { font-size: 9.2pt; color: var(--muted); }
+.steps { counter-reset: step; display: flex; flex-direction: column; gap: 1.5mm; }
+.steps div { display: flex; gap: 2.6mm; align-items: baseline; font-size: 9.6pt; }
+.steps div::before {
+  counter-increment: step; content: counter(step, upper-alpha);
+  flex: none; width: 6.4mm; height: 6.4mm; border-radius: 50%;
+  background: var(--teal); color: #fff; font-weight: 700; font-size: 9pt;
+  display: inline-flex; align-items: center; justify-content: center;
+  transform: translateY(0.4mm);
+}
+.kindnotes { display: flex; gap: 3mm; }
+.kindnotes .gblock { margin-bottom: 0; padding: 2.2mm 3.2mm; }
+</style>
+</head>
+<body>
+
+<section class="page last">
+  <header class="head">
+    <div class="badge">start here &middot; a warm welcome</div>
+    <h1>Pet Care, Pen &amp; Paper</h1>
+    <p class="tag">One friendly folder for every animal in the house &mdash; printed once, filled in slowly, ready before it&rsquo;s needed.</p>
+  </header>
+
+  <div class="welcome">
+    <span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span>
+    <p style="font-size:10.2pt"><b>Hello, fellow animal person.</b> This little pack is the paperwork half of loving a pet: who they are, when their shots come due, who feeds them, and where to look first if they ever worry you. It&rsquo;s all pen-and-paper on purpose &mdash; no accounts, no apps, nothing to remember a password for.</p>
+  </div>
+
+  <h2>What&rsquo;s inside</h2>
+  <div class="sheet-list">
+    <div class="sheet-row"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><b>Pet profile sheet</b><span>One page per animal: looks, quirks, routines and vet basics at a glance.</span></div>
+    <div class="sheet-row"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><b>Vet-visit log</b><span>Every visit in one place, plus vaccine-due rows so boosters never sneak up.</span></div>
+    <div class="sheet-row"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><b>Sitter handoff card</b><span>Everything a pet sitter needs, on two cut-out cards &mdash; one to give, one for the fridge.</span></div>
+    <div class="sheet-row"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><b>Feeding schedule grid</b><span>A week of portions and tick-boxes; hang it wherever the bowls live.</span></div>
+    <div class="sheet-row"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><b>Lost-pet flyer</b><span>Photo box, big name, tear-off tabs &mdash; filled in <i>before</i> anyone hopes it&rsquo;s never needed.</span></div>
+    <div class="sheet-row"><span class="paw"><b class="pad"></b><b class="t1"></b><b class="t2"></b><b class="t3"></b><b class="t4"></b></span><b>Pet-safe room checklist</b><span>Walk the house at nose height and tick what&rsquo;s snug, room by room.</span></div>
+  </div>
+
+  <h2 style="margin-top:2.6mm">Set up in ten minutes</h2>
+  <div class="steps">
+    <div>Grab a folder, a binder or a drawer that gets opened anyway. Paper near the treats lives longer than paper in a drawer of doom.</div>
+    <div>Print one pet profile per animal &mdash; copies are free, and animals happily refuse to share a page.</div>
+    <div>Fill the vet log&rsquo;s vaccine rows from your last clinic paperwork or tag; if a date&rsquo;s missing, the clinic can fill it in by pet&rsquo;s name &mdash; they welcome the call.</div>
+    <div>Hang the feeding grid wherever the bowls live, and stick the second handoff card to the fridge. You&rsquo;re done properly.</div>
+  </div>
+
+  <h2 style="margin-top:2.6mm">Kind notes</h2>
+  <div class="kindnotes">
+    <div class="gblock">
+      <h3>It all stays at home &mdash; and a promise</h3>
+      <p>The sheets are plain HTML/CSS turned into PDFs on your own machine: no sign-ups, no internet, and filled-in pages live on paper where a busy morning can find them.</p>
+      <p>Print at &ldquo;actual size&rdquo;; every sheet works in black &amp; white. US Letter? Rebuild with <i>build.py --paper letter</i>. Rules of thumb here are general &mdash; your vet&rsquo;s advice about your animals always wins.</p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Free Pet Care Pack &middot; start here</span><span>print at home &middot; nothing leaves the house</span></div>
+</section>
+
+</body>
+</html>

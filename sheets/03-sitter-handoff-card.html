@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sitter Handoff Card</title>
+<link rel="stylesheet" href="shared/shared.css">
+<style>
+/* --- sitter handoff card: twice per page, one for the sitter --- */
+.handoff-card {
+  border: 1.8pt solid var(--ink); border-radius: 3mm;
+  padding: 2.4mm 3.6mm 2.4mm;
+  background: #fff;
+}
+.h-head { display: flex; align-items: baseline; justify-content: space-between; gap: 3mm; margin-bottom: 1.4mm; }
+.h-head b { font-size: 12pt; }
+.pname { flex: none; width: 48mm; font-size: 7.4pt; color: var(--hint); text-align: right; }
+.pname .wline { margin-top: 0.4mm; min-height: 4.4mm; }
+.h-away { display: flex; gap: 3mm; font-size: 8.4pt; color: var(--muted); margin-bottom: 1.4mm; }
+.h-away .wline { flex: 1; margin-top: 0.2mm; min-height: 4.4mm; }
+.h-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm; margin-bottom: 1.5mm; }
+.hbox {
+  border: 1.1pt solid var(--line); border-radius: 1.8mm;
+  padding: 1.3mm 2.4mm 1.7mm; background: var(--cream);
+}
+.hbox b { display: block; font-size: 8pt; margin-bottom: 0.5mm; }
+.hbox .wline { min-height: 4mm; }
+.hbox .wline + .wline { margin-top: 0.9mm; }
+.h-pleases {
+  border: 1.1pt solid var(--line); border-radius: 1.8mm;
+  padding: 1.3mm 2.4mm 1.4mm; margin-bottom: 1.3mm; background: #fff;
+}
+.h-pleases b { display: block; font-size: 8pt; margin-bottom: 0.5mm; }
+.h-pleases .wline { min-height: 4mm; }
+.h-foot {
+  display: flex; align-items: center; gap: 2.4mm;
+  border-top: 1pt dashed var(--line); padding-top: 1.2mm;
+  font-size: 8.4pt; color: var(--muted);
+}
+.cut-line {
+  position: relative;
+  border-top: 1.6pt dashed var(--muted);
+  margin: 0.8mm 0;
+  text-align: center;
+  color: var(--hint); font-size: 7.6pt;
+}
+.cut-line span { background: #fff; padding: 0 3mm; position: relative; top: -2mm; letter-spacing: .08em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <header class="head">
+    <div class="badge">print &amp; cut &middot; two cards per sheet</div>
+    <h1>Sitter Handoff Card</h1>
+    <p class="tag">Everything a pet sitter needs on one pocket card &mdash; cut along the dotted line, one to hand over, one for the fridge.</p>
+  </header>
+
+  <div class="handoff-card">
+    <div class="h-head"><b>Pet sitter &mdash; everything at a glance</b><span class="pname">pet&rsquo;s name:<span class="wline"></span></span></div>
+    <div class="h-away"><span>away from:</span><span class="wline"></span><span>back by:</span><span class="wline"></span></div>
+    <div class="h-grid">
+      <div class="hbox"><b>Feeding &amp; water &mdash; times, spots, scoop size</b><span class="wline"></span><span class="wline"></span></div>
+      <div class="hbox"><b>Walks, potty, litter &amp; play</b><span class="wline"></span><span class="wline"></span></div>
+      <div class="hbox"><b>Meds &mdash; what, when, the trick that works</b><span class="wline"></span><span class="wline"></span></div>
+      <div class="hbox"><b>Vet &mdash; clinic, phone, after-hours</b><span class="wline"></span><span class="wline"></span></div>
+      <div class="hbox"><b>My phone &amp; the backup human</b><span class="wline"></span><span class="wline"></span></div>
+      <div class="hbox"><b>Where things are &mdash; leash, carrier, food bin, keys</b><span class="wline"></span><span class="wline"></span></div>
+    </div>
+    <div class="h-pleases"><b>Pleases &amp; nevers</b><span class="wline"></span><span class="wline"></span></div>
+    <div class="h-foot"><span class="cb"></span><span><b>Send one photo a day, pretty please</b> &mdash; it calms everyone, including the pet.</span></div>
+  </div>
+
+  <div class="cut-line"><span>&#9986; cut here &mdash; front door copy above, fridge copy below</span></div>
+
+  <div class="handoff-card">
+    <div class="h-head"><b>Pet sitter &mdash; everything at a glance</b><span class="pname">pet&rsquo;s name:<span class="wline"></span></span></div>
+    <div class="h-away"><span>away from:</span><span class="wline"></span><span>back by:</span><span class="wline"></span></div>
+    <div class="h-grid">
+      <div class="hbox"><b>Feeding &amp; water &mdash; times, spots, scoop size</b><span class="wline"></span><span class="wline"></span></div>
+      <div class="hbox"><b>Walks, potty, litter &amp; play</b><span class="wline"></span><span class="wline"></span></div>
+      <div class="hbox"><b>Meds &mdash; what, when, the trick that works</b><span class="wline"></span><span class="wline"></span></div>
+      <div class="hbox"><b>Vet &mdash; clinic, phone, after-hours</b><span class="wline"></span><span class="wline"></span></div>
+      <div class="hbox"><b>My phone &amp; the backup human</b><span class="wline"></span><span class="wline"></span></div>
+      <div class="hbox"><b>Where things are &mdash; leash, carrier, food bin, keys</b><span class="wline"></span><span class="wline"></span></div>
+    </div>
+    <div class="h-pleases"><b>Pleases &amp; nevers</b><span class="wline"></span><span class="wline"></span></div>
+    <div class="h-foot"><span class="cb"></span><span><b>Send one photo a day, pretty please</b> &mdash; it calms everyone, including the pet.</span></div>
+  </div>
+
+  <div class="foot"><span>Free Pet Care Pack &middot; sitter handoff card</span><span>works in black &amp; white</span></div>
+</section>
+
+<section class="page guide last">
+  <header class="head">
+    <div class="badge">how to use it</div>
+    <h1>How to Use &middot; Sitter Handoff Card</h1>
+    <p class="tag">Two cards per sheet: the upper one goes with the sitter, the lower one takes the fridge&rsquo;s best spot.</p>
+  </header>
+
+  <div class="gblock">
+    <h3>What this sheet builds</h3>
+    <p>A pocket-sized brief a sitter can digest in the doorway: times, tricks, who to call and where the leash lives. It also quietly doubles as your own emergency card &mdash; fill it for <i>yourself</i> once and hand it over when a flat tyre eats your evening.</p>
+  </div>
+
+  <div class="gblock">
+    <h3>Sixty-second setup</h3>
+    <ol>
+      <li>Draft the boxes by hand first; the sitter card wants your normal words, not tidy handwriting printouts.</li>
+      <li>Write the &ldquo;nevers&rdquo; in capital letters &mdash; sitters scan, and capitals get read.</li>
+      <li>Attach the pet photo on the back so the card belongs to the right animal even in a multi-pet house.</li>
+    </ol>
+  </div>
+
+  <div class="gblock">
+    <h3>The fridge copy is not spare</h3>
+    <ul>
+      <li>The fridge card keeps your family honest about the meds schedule when you&rsquo;re home, too.</li>
+      <li>Refresh both cards whenever anything changes &mdash; new meds, new clinic, new trick for pill time.</li>
+      <li>Overnight stays? Add what&rsquo;s forbidden in bed, and which toy negotiates sleep.</li>
+    </ul>
+  </div>
+
+  <div class="gblock">
+    <h3>Warm tip</h3>
+    <p>Sitters photograph the fridge card as their own backup &mdash; that&rsquo;s the point of it living where things get read. A photo a day on the foot check-box keeps worried owners calm and the pet a touch famous.</p>
+  </div>
+
+  <div class="foot"><span>Home friendly &middot; copy, print, share</span><span>no signups &middot; no internet needed</span></div>
+</section>
+
+</body>
+</html>

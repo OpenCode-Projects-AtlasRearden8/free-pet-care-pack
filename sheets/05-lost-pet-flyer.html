@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lost-Pet Flyer</title>
+<link rel="stylesheet" href="shared/shared.css">
+<style>
+/* --- lost-pet flyer: the whole first page is the flyer --- */
+.flyer {
+  border: 2pt solid var(--ink); border-radius: 3mm;
+  padding: 4mm 5mm 4.4mm; background: #fff;
+}
+.f-banner {
+  display: flex; align-items: center; justify-content: space-between; gap: 4mm;
+  border-bottom: 2.5pt solid var(--ink); padding-bottom: 2.4mm; margin-bottom: 3.2mm;
+}
+.f-banner h2 { font-size: 27pt; letter-spacing: .06em; color: var(--terra); line-height: 1; }
+.f-banner p { font-size: 9pt; color: var(--muted); text-align: right; max-width: 60mm; }
+.f-photo-row { display: block; margin-bottom: 3mm; }
+.f-maintable { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.f-maintable td { vertical-align: top; }
+td.m-photo { width: 61mm; padding: 0 4.4mm 0 0; }
+td.m-stack { padding: 0; }
+.f-maintable .photo-box {
+  width: 56mm; height: 56mm;
+  border: 1.6pt dashed var(--muted); border-radius: 2.6mm;
+  display: block; text-align: center;
+  color: var(--hint); font-size: 8.4pt; padding: 3mm; background: var(--cream);
+  padding-top: 24mm;
+}
+.f-stack .giantlabel {
+  display: block; font-size: 7.2pt; text-transform: uppercase;
+  letter-spacing: .09em; color: var(--muted); margin-bottom: 0.4mm;
+}
+.f-name { border-bottom: 1.6pt solid var(--muted); height: 10mm; margin-bottom: 2.4mm; }
+.f-lines { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.f-lines td { padding: 0 0 1.8mm 0; vertical-align: bottom; }
+.f-lines td.lab { width: 44mm; font-size: 8.6pt; color: var(--muted); line-height: 1.15; }
+.f-lines td.wl { border-bottom: 1pt solid var(--muted); height: 6.4mm; }
+.f-contact {
+  border: 1.4pt solid var(--terra); border-radius: 2.6mm; background: #fdf1ea;
+  padding: 2.6mm 3.2mm 3mm; margin-bottom: 2.8mm;
+}
+.f-contact b { font-size: 10.6pt; }
+.f-contact p { font-size: 8.8pt; color: #6b4a3a; margin-top: 0.6mm; margin-bottom: 1.6mm; }
+.f-contact .cline { display: flex; align-items: baseline; gap: 2.6mm; margin-bottom: 1.6mm; }
+.f-contact .cline:last-child { margin-bottom: 0; }
+.f-contact .cline span { flex: none; font-size: 8.2pt; color: var(--muted); }
+.f-contact .cline .wline { flex: 1; min-height: 7mm; }
+.f-strip { font-size: 8.2pt; color: var(--muted); margin-bottom: 2mm; }
+.f-tabs { display: flex; gap: 1mm; }
+.f-tabs .tab {
+  flex: 1; border: 1pt dashed var(--muted); border-radius: 1.6mm;
+  padding: 1mm 1.4mm 0.8mm; font-size: 6.6pt; color: var(--hint);
+}
+.f-tabs .tab .tl { display: block; border-bottom: 1pt dashed var(--muted); height: 5.6mm; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <header class="head">
+    <div class="badge">print &amp; keep &middot; ready before it&rsquo;s needed</div>
+    <h1>Lost-Pet Flyer</h1>
+    <p class="tag">Photo box, big name, tear-off tabs &mdash; fill one in today, slide it into the folder, and hope it stays brand new forever.</p>
+  </header>
+
+  <div class="flyer">
+    <div class="f-banner">
+      <h2>LOST PET</h2>
+      <p>please help us bring a much-loved animal home &mdash; thank you for looking twice</p>
+    </div>
+
+    <div class="f-photo-row">
+      <table class="f-maintable">
+        <tr>
+          <td class="m-photo"><div class="photo-box">tape a photo here &mdash; one where the face and the collar both show</div></td>
+          <td class="m-stack">
+            <span class="giantlabel">Pet&rsquo;s name (big enough to read from the street)</span>
+            <div class="f-name"></div>
+            <table class="f-lines">
+              <tr><td class="lab">Last seen &mdash; where:</td><td class="wl"></td></tr>
+              <tr><td class="lab">Last seen &mdash; when:</td><td class="wl"></td></tr>
+              <tr><td class="lab">Breed, colour &amp; size:</td><td class="wl"></td></tr>
+              <tr><td class="lab">Collar, tag, chip &amp; quirks (what they do when scared):</td><td class="wl"></td></tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="f-contact">
+      <b>Please don&rsquo;t chase.</b>
+      <p>A scared pet runs again &mdash; chasing can turn one worried neighbour into moving targets. Call instead, stay kind, and give us the joy of coming out ourselves.</p>
+      <div class="cline"><span>call right away:</span><span class="wline"></span></div>
+      <div class="cline"><span>or call the clinic:</span><span class="wline"></span></div>
+      <div class="cline"><span>found by?</span><span class="wline"></span></div>
+    </div>
+
+    <p class="f-strip">Post on porches, lampposts, the vet, the corner shop and the park gate. Snip the tabs below; every tab fits a car window.</p>
+    <div class="f-tabs">
+      <span class="tab">call:<i class="tl"></i></span><span class="tab">call:<i class="tl"></i></span><span class="tab">call:<i class="tl"></i></span><span class="tab">call:<i class="tl"></i></span><span class="tab">call:<i class="tl"></i></span><span class="tab">call:<i class="tl"></i></span><span class="tab">call:<i class="tl"></i></span><span class="tab">call:<i class="tl"></i></span><span class="tab">call:<i class="tl"></i></span>
+    </div>
+  </div>
+
+  <div class="foot"><span>Free Pet Care Pack &middot; lost-pet flyer</span><span>works in black &amp; white</span></div>
+</section>
+
+<section class="page guide last">
+  <header class="head">
+    <div class="badge">how to use it</div>
+    <h1>How to Use &middot; Lost-Pet Flyer</h1>
+    <p class="tag">The flier nobody ever wants to print &mdash; which is exactly why it&rsquo;s best printed early.</p>
+  </header>
+
+  <div class="gblock">
+    <h3>What this sheet builds</h3>
+    <p>Preparedness with a soft landing: a flyer that only needs a photo, a name and a phone when it matters. Filling one <i>before</i> anything happens takes minutes; filling one at midday on the worst Thursday tends to take tears.</p>
+  </div>
+
+  <div class="gblock">
+    <h3>Sixty-second setup</h3>
+    <ol>
+      <li>Pencil in the clinic&rsquo;s phone today &mdash; it doesn&rsquo;t change often, and it&rsquo;s the one number every stranger has in common.</li>
+      <li>Leave the rest blank until needed, then fill with the thickest pen in the house.</li>
+      <li>Reprint from the folder as needed; keep the master clean of coffee rings.</li>
+    </ol>
+  </div>
+
+  <div class="gblock">
+    <h3>If it happens for real</h3>
+    <ul>
+      <li>Walk, don&rsquo;t drive, the routes the pet already knows; call while walking.</li>
+      <li>Say &ldquo;lost pet, please don&rsquo;t chase&rdquo; out loud &mdash; it gives neighbours the one instruction that helps.</li>
+      <li>Kind people help; anyone asking a fee or a code to return the pet is resisted &mdash; work with your vet and the local shelter instead.</li>
+    </ul>
+  </div>
+
+  <div class="gblock">
+    <h3>Warm tip</h3>
+    <p>The &ldquo;quirks&rdquo; line matters more than it looks: a pet that bolts at scooters or hides under porches tells a finder exactly how to help without adding fear.</p>
+  </div>
+
+  <div class="foot"><span>Home friendly &middot; copy, print, share</span><span>no signups &middot; no internet needed</span></div>
+</section>
+
+</body>
+</html>
